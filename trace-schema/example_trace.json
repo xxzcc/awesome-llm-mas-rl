@@ -1,0 +1,106 @@
+{
+  "trace_id": "demo-trace-001",
+  "task_id": "demo-task-browser-research",
+  "system": "illustrative",
+  "topology": "centralized",
+  "events": [
+    {
+      "id": "e1",
+      "t": 0,
+      "type": "orchestrator_decision",
+      "agent": "orchestrator",
+      "role": "lead",
+      "content_ref": "decide_spawn_planner_executor"
+    },
+    {
+      "id": "e2",
+      "t": 1,
+      "type": "spawn",
+      "agent": "orchestrator",
+      "role": "planner",
+      "to": "planner_1"
+    },
+    {
+      "id": "e3",
+      "t": 2,
+      "type": "spawn",
+      "agent": "orchestrator",
+      "role": "executor",
+      "to": "executor_1"
+    },
+    {
+      "id": "e4",
+      "t": 3,
+      "type": "message",
+      "agent": "planner_1",
+      "from": "planner_1",
+      "to": "executor_1",
+      "role": "planner",
+      "content_ref": "plan_summary_hash",
+      "trusted": true
+    },
+    {
+      "id": "e5",
+      "t": 4,
+      "type": "tool_call",
+      "agent": "executor_1",
+      "role": "executor",
+      "tool": "browser.search",
+      "content_ref": "query_hash",
+      "trusted": true
+    },
+    {
+      "id": "e6",
+      "t": 5,
+      "type": "tool_result",
+      "agent": "browser.search",
+      "tool": "browser.search",
+      "content_ref": "result_hash",
+      "trusted": false
+    },
+    {
+      "id": "e7",
+      "t": 6,
+      "type": "return",
+      "agent": "executor_1",
+      "from": "executor_1",
+      "to": "orchestrator",
+      "content_ref": "answer_summary_hash",
+      "trusted": true
+    },
+    {
+      "id": "e8",
+      "t": 7,
+      "type": "aggregate",
+      "agent": "orchestrator",
+      "role": "lead",
+      "content_ref": "final_answer_hash"
+    }
+  ],
+  "edges": [
+    {"src": "e1", "dst": "e2", "type": "spawn"},
+    {"src": "e1", "dst": "e3", "type": "spawn"},
+    {"src": "e2", "dst": "e4", "type": "causal"},
+    {"src": "e3", "dst": "e4", "type": "message"},
+    {"src": "e4", "dst": "e5", "type": "tool_dependency"},
+    {"src": "e5", "dst": "e6", "type": "return"},
+    {"src": "e6", "dst": "e7", "type": "causal"},
+    {"src": "e7", "dst": "e8", "type": "aggregate"}
+  ],
+  "rewards": {
+    "team": 1.0,
+    "orchestration": 0.3,
+    "tool": 0.1
+  },
+  "costs": {
+    "tokens": 12000,
+    "wall_clock_s": 420,
+    "tool_calls": 1,
+    "messages": 1
+  },
+  "metrics": {
+    "task_success": 1,
+    "protocol_overhead": 0.18,
+    "error_amplification": 0
+  }
+}

@@ -1,0 +1,807 @@
+% =====================================================================
+% Bibliography for:
+%   Reinforcement Learning for LLM-based Multi-Agent Systems:
+%   An Orchestration-Trace Taxonomy
+%
+% All entries below were verified against arXiv / conference sites
+% as of 2026-04-26. The CSV file papers/papers.csv is the source of
+% truth for taxonomy tags; this .bib is the citation-ready export.
+% =====================================================================
+
+% ===================== A. RL methods for LLM-MAS =====================
+
+@article{magrpo2025,
+  title   = {{LLM} Collaboration With Multi-Agent Reinforcement Learning},
+  author  = {Liu, Shuo and Amato, Christopher and others},
+  journal = {arXiv preprint arXiv:2508.04652},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2508.04652},
+  note    = {v7 dated 2025-12-09; introduces MAGRPO},
+}
+
+@article{marft2025,
+  title   = {{MARFT}: Multi-Agent Reinforcement Fine-Tuning},
+  author  = {Liao, Junwei and others},
+  journal = {arXiv preprint arXiv:2504.16129},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2504.16129},
+  note    = {v4 dated 2025-11-03; submitted to ICLR 2026},
+}
+
+@article{m-grpo2025,
+  title   = {Multi-Agent Deep Research: Training Multi-Agent Systems with {M-GRPO}},
+  author  = {Hong, Haoyang and others},
+  journal = {arXiv preprint arXiv:2511.13288},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2511.13288},
+  note    = {Hierarchical GRPO; Ant Group},
+}
+
+@article{dr-mas2026,
+  title   = {{Dr. MAS}: Stable Reinforcement Learning for Multi-Agent {LLM} Systems},
+  author  = {Feng, Lang and others},
+  journal = {arXiv preprint arXiv:2602.08847},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2602.08847},
+  note    = {Diagnoses GRPO instability in MAS; agent-wise normalization},
+}
+
+@article{c3-2026,
+  title   = {Contextual Counterfactual Credit Assignment for Multi-Agent
+             Reinforcement Learning in {LLM} Collaboration},
+  author  = {Chen, Yanjun and others},
+  journal = {arXiv preprint arXiv:2603.06859},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2603.06859},
+  note    = {Counterfactual causal credit assignment at message level},
+}
+
+@article{sharp2026,
+  title   = {Who Deserves the Reward? {SHARP}: Shapley Credit-based Optimization
+             for Multi-Agent System},
+  author  = {Li, Yanming and others},
+  journal = {arXiv preprint arXiv:2602.08335},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2602.08335},
+  note    = {Shapley-value-based hierarchical credit assignment},
+}
+
+@article{agent-lightning2025,
+  title   = {Agent {Lightning}: Train ANY {AI} Agents with Reinforcement Learning},
+  author  = {Luo, Xufang and others},
+  journal = {arXiv preprint arXiv:2508.03680},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2508.03680},
+  note    = {Microsoft Research; decouples agent execution from RL training},
+}
+
+@article{debate-as-reward2026,
+  title   = {Debate as Reward: A Multi-Agent Reward System for Scientific
+             Ideation via {RL} Post-Training},
+  author  = {Salimi, Moein and others},
+  journal = {arXiv preprint arXiv:2604.16723},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2604.16723},
+  note    = {Multi-agent debate as reward signal},
+}
+
+@article{matpo2025,
+  title   = {Multi-Agent Tool-Integrated Policy Optimization},
+  author  = {Mo, Zhanfeng and others},
+  journal = {arXiv preprint arXiv:2510.04678},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2510.04678},
+  note    = {Single-LLM dual-role planner+worker; +18.38\% over single-agent},
+}
+
+@inproceedings{puppeteer2025,
+  title     = {Multi-Agent Collaboration via Evolving Orchestration},
+  author    = {Dang, Yufan and others},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2025},
+  url       = {https://arxiv.org/abs/2505.19591},
+  note      = {Puppeteer central orchestrator; Tsinghua/OpenBMB ChatDev team},
+}
+
+@article{halo2025,
+  title   = {{HALO}: Hierarchical Autonomous Logic-Oriented Orchestration
+             for Multi-Agent {LLM} Systems},
+  author  = {Hou, Zhipeng and others},
+  journal = {arXiv preprint arXiv:2505.13516},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2505.13516},
+  note    = {MCTS-based three-layer hierarchical MAS},
+}
+
+@article{paramanager2026,
+  title   = {Small Model as Master Orchestrator: Learning Unified Agent-Tool
+             Orchestration with Parallel Subtask Decomposition},
+  author  = {Yuan, Wenzhen and others},
+  journal = {arXiv preprint arXiv:2604.17009},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2604.17009},
+  note    = {ParaManager; lightweight orchestrator unifying agent-tool action space},
+}
+
+@article{marsrl2025,
+  title   = {{MarsRL}: Advancing Multi-Agent Reasoning System via Reinforcement
+             Learning with Agentic Pipeline Parallelism},
+  author  = {Liu, Shulin and others},
+  journal = {arXiv preprint arXiv:2511.11373},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2511.11373},
+  note    = {Agentic pipeline-parallel RL},
+}
+
+@inproceedings{malt2025,
+  title     = {{MALT}: Improving Reasoning with Multi-Agent {LLM} Training},
+  author    = {Motwani, Sumeet Ramesh and others},
+  booktitle = {Conference on Language Modeling (COLM)},
+  year      = {2025},
+  url       = {https://arxiv.org/abs/2412.01928},
+  note      = {Generator-verifier-refiner training with role-PRM (+14.14\%)},
+}
+
+@inproceedings{maporl2025,
+  title     = {{MAPoRL}: Multi-Agent Post-Co-Training for Collaborative Large
+               Language Models with Reinforcement Learning},
+  author    = {Park, Chanwoo and others},
+  booktitle = {Annual Meeting of the Association for Computational Linguistics (ACL)},
+  year      = {2025},
+  url       = {https://arxiv.org/abs/2502.18439},
+  note      = {MIT; first explicit post-training RL for collaboration},
+}
+
+@article{latentmas2025,
+  title   = {Latent Collaboration in Multi-Agent Systems},
+  author  = {Zou, Jiaru and others},
+  journal = {arXiv preprint arXiv:2511.20639},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2511.20639},
+  note    = {Training-free latent-space MAS; +14.6\% over baselines},
+}
+
+@article{mae2025,
+  title   = {Multi-Agent Evolve: {LLM} Self-Improve through Co-evolution},
+  author  = {Chen, Yixing and others},
+  journal = {arXiv preprint arXiv:2510.23595},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2510.23595},
+  note    = {Proposer-Solver-Judge co-evolution; UIUC ulab},
+}
+
+@article{hera2026,
+  title   = {Experience as a Compass: Multi-agent {RAG} with Evolving
+             Orchestration and Agent Prompts},
+  author  = {Li, Sha and others},
+  journal = {arXiv preprint arXiv:2604.00901},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2604.00901},
+  note    = {HERA; evolving orchestration policy for MAS-RAG},
+}
+
+@inproceedings{tamas2025,
+  title     = {{TAMAS}: Benchmarking Adversarial Risks in Multi-Agent {LLM} Systems},
+  author    = {Kavathekar, Ishan and others},
+  booktitle = {ICML 2025 Multi-Agent Systems Workshop},
+  year      = {2025},
+  url       = {https://arxiv.org/abs/2511.05269},
+  note      = {First adversarial robustness benchmark for MAS},
+}
+
+@article{agentspawn2026,
+  title   = {{AgentSpawn}: Adaptive Multi-Agent Collaboration Through Dynamic
+             Spawning for Long-Horizon Code Generation},
+  author  = {Costa, Igor},
+  journal = {arXiv preprint arXiv:2602.07072},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2602.07072},
+  note    = {Runtime dynamic spawn + memory transfer; sole-author},
+}
+
+@article{context-folding2025,
+  title   = {Scaling Long-Horizon {LLM} Agent via Context-Folding},
+  author  = {Sun, Weiwei and others},
+  journal = {arXiv preprint arXiv:2510.11967},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2510.11967},
+  note    = {ByteDance Seed/CMU; submitted to ICLR 2026},
+}
+
+% ===================== B. Surveys =====================
+
+@article{survey-mas2024,
+  title   = {A Survey on {LLM}-based Multi-Agent System: Recent Advances and
+             New Frontiers in Application},
+  author  = {Chen, Shuaihang and Zhang, Weinan and Liu, Ting and others},
+  journal = {arXiv preprint arXiv:2412.17481},
+  year    = {2024},
+  url     = {https://arxiv.org/abs/2412.17481},
+  note    = {v2 dated 2025-01-07},
+}
+
+@article{survey-collab2025,
+  title   = {Multi-Agent Collaboration Mechanisms: A Survey of {LLMs}},
+  author  = {Tran, Khanh-Tung and O'Sullivan, Barry and others},
+  journal = {arXiv preprint arXiv:2501.06322},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2501.06322},
+  note    = {UCC Ireland},
+}
+
+@article{survey-agentic-reasoning2026,
+  title   = {Agentic Reasoning for Large Language Models},
+  author  = {Wei, Tianxin and Ji, Heng and others},
+  journal = {arXiv preprint arXiv:2601.12538},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2601.12538},
+  note    = {UIUC; 29-author team},
+}
+
+@article{survey-rl-meets-llm2025,
+  title   = {Reinforcement Learning Meets Large Language Models: A Survey of
+             Advancements and Applications Across the {LLM} Lifecycle},
+  author  = {Liu, Keliang and others},
+  journal = {arXiv preprint arXiv:2509.16679},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2509.16679},
+  note    = {Fudan/Tongji/CUHK MMLab},
+}
+
+@article{survey-agentic-rl2025,
+  title   = {The Landscape of Agentic Reinforcement Learning for {LLMs}: A Survey},
+  author  = {Zhang, Guibin and Torr, Philip and Wang, Jun and others},
+  journal = {Transactions on Machine Learning Research (TMLR)},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2509.02547},
+  note    = {Covers 500+ works; v5 2026-04-17},
+}
+
+% ===================== C. Industrial materials =====================
+
+@techreport{kimi-k2-5-2026,
+  title       = {{Kimi K2.5}: Visual Agentic Intelligence},
+  author      = {{Kimi Team}},
+  institution = {Moonshot AI},
+  year        = {2026},
+  url         = {https://www.kimi.com/blog/kimi-k2-5.html},
+  note        = {Tech report; arXiv 2602.02276; introduces Agent Swarm + PARL; accessed 2026-04-27},
+}
+
+@misc{kimi-k2-6-2026,
+  title        = {{Kimi K2.6} Tech Blog},
+  author       = {{Kimi Team}},
+  howpublished = {\url{https://www.kimi.com/blog/kimi-k2-6}},
+  year         = {2026},
+  note         = {2026-04-20; 300-agent coordination, Claw Groups; accessed 2026-04-27},
+}
+
+@misc{openai-codex2025,
+  title        = {Introducing Codex},
+  author       = {{OpenAI}},
+  howpublished = {\url{https://openai.com/index/introducing-codex/}; \url{https://openai.com/index/introducing-the-codex-app/}},
+  year         = {2025},
+  note         = {2025-05-16 launch post plus Codex app materials; cloud-native parallel software-engineering agent; accessed 2026-04-27},
+}
+
+@misc{claude-code-subagents-2025,
+  title        = {Creating Custom Sub-Agents (Claude Code Docs)},
+  author       = {{Anthropic}},
+  howpublished = {\url{https://docs.anthropic.com/en/docs/claude-code/sub-agents}},
+  year         = {2025},
+  note         = {Documentation; accessed 2026-04-27},
+}
+
+@misc{anthropic-trustworthy2025,
+  title        = {Our framework for developing safe and trustworthy agents},
+  author       = {{Anthropic}},
+  howpublished = {\url{https://www.anthropic.com/news/our-framework-for-developing-safe-and-trustworthy-agents}},
+  year         = {2025},
+  note         = {2025-08-04; accessed 2026-04-27},
+}
+
+@misc{anthropic-c-compiler2026,
+  title        = {Building a {C} compiler with a team of parallel {Claudes}},
+  author       = {{Anthropic Engineering}},
+  howpublished = {\url{https://www.anthropic.com/engineering/building-c-compiler}},
+  year         = {2026},
+  note         = {2026-02-05; 16 parallel Claudes; accessed 2026-04-27},
+}
+
+% ===================== D. Classical MARL =====================
+
+@article{dec-pomdp2002,
+  title   = {The Complexity of Decentralized Control of {M}arkov Decision Processes},
+  author  = {Bernstein, Daniel S. and Givan, Robert and Immerman, Neil and Zilberstein, Shlomo},
+  journal = {Mathematics of Operations Research},
+  volume  = {27},
+  number  = {4},
+  pages   = {819--840},
+  year    = {2002},
+  url     = {https://pubsonline.informs.org/doi/10.1287/moor.27.4.819.297},
+  note    = {Original Dec-POMDP formalism; proves NEXP-complete},
+}
+
+@inproceedings{markov-games1994,
+  title     = {Markov Games as a Framework for Multi-Agent Reinforcement Learning},
+  author    = {Littman, Michael L.},
+  booktitle = {Proceedings of the International Conference on Machine Learning (ICML)},
+  year      = {1994},
+  pages     = {157--163},
+  url       = {https://www.cs.duke.edu/courses/spring07/cps296.3/littman94markov.pdf},
+  note      = {Foundational stochastic/Markov-game formulation for MARL},
+}
+
+@inproceedings{maddpg2017,
+  title     = {Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments},
+  author    = {Lowe, Ryan and Wu, Yi and Tamar, Aviv and Harb, Jean and
+               Abbeel, Pieter and Mordatch, Igor},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2017},
+  url       = {https://arxiv.org/abs/1706.02275},
+  note      = {MADDPG; centralized critic, decentralized actor},
+}
+
+@inproceedings{vdn2018,
+  title     = {Value-Decomposition Networks For Cooperative Multi-Agent Learning},
+  author    = {Sunehag, Peter and Lever, Guy and Gruslys, Audrunas and
+               Czarnecki, Wojciech M. and Zambaldi, Vinicius and Jaderberg, Max and
+               Lanctot, Marc and Sonnerat, Nicolas and Leibo, Joel Z. and
+               Tuyls, Karl and Graepel, Thore},
+  booktitle = {Proceedings of the 17th International Conference on Autonomous
+               Agents and MultiAgent Systems (AAMAS)},
+  year      = {2018},
+  url       = {https://arxiv.org/abs/1706.05296},
+  note      = {VDN; additive value decomposition},
+}
+
+@inproceedings{qmix2018,
+  title     = {{QMIX}: Monotonic Value Function Factorisation for Deep Multi-Agent
+               Reinforcement Learning},
+  author    = {Rashid, Tabish and Samvelyan, Mikayel and Schroeder de Witt, Christian and
+               Farquhar, Gregory and Foerster, Jakob and Whiteson, Shimon},
+  booktitle = {Proceedings of the International Conference on Machine Learning (ICML)},
+  year      = {2018},
+  url       = {https://arxiv.org/abs/1803.11485},
+  note      = {QMIX; monotonic mixing network},
+}
+
+@inproceedings{coma2018,
+  title     = {Counterfactual Multi-Agent Policy Gradients},
+  author    = {Foerster, Jakob N. and Farquhar, Gregory and Afouras, Triantafyllos and
+               Nardelli, Nantas and Whiteson, Shimon},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  year      = {2018},
+  url       = {https://arxiv.org/abs/1705.08926},
+  note      = {COMA; counterfactual baseline for per-agent credit},
+}
+
+@inproceedings{mappo2022,
+  title     = {The Surprising Effectiveness of {PPO} in Cooperative Multi-Agent Games},
+  author    = {Yu, Chao and Velu, Akash and Vinitsky, Eugene and Gao, Jiaxuan and
+               Wang, Yu and Bayen, Alexandre and Wu, Yi},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS) Datasets and
+               Benchmarks Track},
+  year      = {2022},
+  url       = {https://arxiv.org/abs/2103.01955},
+  note      = {MAPPO; PPO with centralized value for cooperative MARL},
+}
+
+@article{ippo2020,
+  title   = {Is Independent Learning All You Need in the {S}tar{C}raft Multi-Agent
+             Challenge?},
+  author  = {de Witt, Christian Schroeder and Gupta, Tarun and Makoviichuk, Denys and
+             Makoviychuk, Viktor and Torr, Philip H. S. and Sun, Mingfei and
+             Whiteson, Shimon},
+  journal = {arXiv preprint arXiv:2011.09533},
+  year    = {2020},
+  url     = {https://arxiv.org/abs/2011.09533},
+  note    = {IPPO; independent PPO competitive on SMAC},
+}
+
+@inproceedings{shapley-q2020,
+  title     = {Shapley {Q}-value: A Local Reward Approach to Solve Global Reward Games},
+  author    = {Wang, Jianhong and Zhang, Yuan and Kim, Tae-Kyun and Gu, Yunjie},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/1907.05707},
+  note      = {Shapley-value credit assignment for cooperative MARL},
+}
+
+@article{difference-rewards2001,
+  title   = {Optimal Payoff Functions for Members of Collectives},
+  author  = {Wolpert, David H. and Tumer, Kagan},
+  journal = {Advances in Complex Systems},
+  volume  = {4},
+  number  = {2--3},
+  pages   = {265--279},
+  year    = {2001},
+  url     = {https://doi.org/10.1142/S0219525901000188},
+  note    = {Difference rewards / Wonderful Life Utility; foundational credit assignment},
+}
+
+% ===================== E. Benchmarks =====================
+
+@inproceedings{swe-bench2024,
+  title     = {{SWE}-bench: Can Language Models Resolve Real-World {G}it{H}ub Issues?},
+  author    = {Jimenez, Carlos E. and Yang, John and Wettig, Alexander and
+               Yao, Shunyu and Pei, Kexin and Press, Ofir and Narasimhan, Karthik},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2024},
+  url       = {https://arxiv.org/abs/2310.06770},
+  note      = {2294 real GitHub issues from 12 Python repos},
+}
+
+@inproceedings{webarena2024,
+  title     = {{WebArena}: A Realistic Web Environment for Building Autonomous Agents},
+  author    = {Zhou, Shuyan and Xu, Frank F. and Zhu, Hao and Zhou, Xuhui and
+               Lo, Robert and Sridhar, Abishek and Cheng, Xianyi and Ou, Tianyue and
+               Bisk, Yonatan and Fried, Daniel and Alon, Uri and Neubig, Graham},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2024},
+  url       = {https://arxiv.org/abs/2307.13854},
+  note      = {Self-hostable web environment across four site categories},
+}
+
+@article{gaia2023,
+  title   = {{GAIA}: a benchmark for General {AI} Assistants},
+  author  = {Mialon, Gr\'{e}goire and Fourrier, Cl\'{e}mentine and Swift, Craig and
+             Wolf, Thomas and LeCun, Yann and Scialom, Thomas},
+  journal = {arXiv preprint arXiv:2311.12983},
+  year    = {2023},
+  url     = {https://arxiv.org/abs/2311.12983},
+  note    = {466 tool-use-heavy real-world questions},
+}
+
+@article{browsecomp2025,
+  title   = {{BrowseComp}: A Simple Yet Challenging Benchmark for Browsing Agents},
+  author  = {Wei, Jason and Sun, Zhiqing and Papay, Spencer and McKinney, Scott and
+             Han, Jeffrey and Fulford, Isa and Chung, Hyung Won and Passos, Alex Tachard and
+             Fedus, William and Glaese, Amelia},
+  journal = {arXiv preprint arXiv:2504.12516},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2504.12516},
+  note    = {OpenAI 2025-04-17; 1266 hard browsing questions},
+}
+
+@inproceedings{toolbench2023,
+  title     = {{ToolLLM}: Facilitating Large Language Models to Master 16000+
+               Real-world {API}s},
+  author    = {Qin, Yujia and Liang, Shihao and Ye, Yining and Zhu, Kunlun and
+               Yan, Lan and Lu, Yaxi and Lin, Yankai and Cong, Xin and Tang, Xiangru and
+               Qian, Bill and Zhao, Sihan and Hong, Lauren and Tian, Runchu and
+               Xie, Ruobing and Zhou, Jie and Gerstein, Mark and Li, Dahai and
+               Liu, Zhiyuan and Sun, Maosong},
+  booktitle = {International Conference on Learning Representations (ICLR) Spotlight},
+  year      = {2024},
+  url       = {https://arxiv.org/abs/2307.16789},
+  note      = {ToolBench + ToolLLaMA; 16k+ RapidAPI tools},
+}
+
+@article{tau-bench2024,
+  title   = {{$\tau$-bench}: A Benchmark for Tool-Agent-User Interaction in
+             Real-World Domains},
+  author  = {Yao, Shunyu and Shinn, Noah and Razavi, Pedram and Narasimhan, Karthik},
+  journal = {arXiv preprint arXiv:2406.12045},
+  year    = {2024},
+  url     = {https://arxiv.org/abs/2406.12045},
+  note    = {Sierra Research; retail/airline domains with policy adherence},
+}
+
+@inproceedings{osworld2024,
+  title     = {{OSWorld}: Benchmarking Multimodal Agents for Open-Ended Tasks in
+               Real Computer Environments},
+  author    = {Xie, Tianbao and Zhang, Danyang and Chen, Jixuan and Li, Xiaochuan and
+               Zhao, Siheng and Cao, Ruisheng and Jing Hua, Toh and Cheng, Zhoujun and
+               Shin, Dongchan and Lei, Fangyu and Liu, Yitao and Xu, Yiheng and
+               Zhou, Shuyan and Savarese, Silvio and Xiong, Caiming and Zhong, Victor and
+               Yu, Tao},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS) Datasets and
+               Benchmarks Track},
+  year      = {2024},
+  url       = {https://arxiv.org/abs/2404.07972},
+  note      = {369 real-computer tasks across Ubuntu/Windows/macOS},
+}
+
+@inproceedings{multiagentbench2025,
+  title     = {{MultiAgentBench}: Evaluating the Collaboration and Competition of
+               {LLM} Agents},
+  author    = {Zhu, Kunlun and Du, Hongyi and Hong, Zhaoxuan and Yang, Xiaowei and
+               Guo, Shengyun and Wang, Zhuoyun and Qian, Yuchen and Tang, Xuhui and
+               Zhang, Ziyu and Wang, Jingyang and Gu, Lijun and Xie, Tao and
+               Ji, Heng and You, Jiaxuan},
+  booktitle = {Proceedings of the 63rd Annual Meeting of the Association for
+               Computational Linguistics (ACL)},
+  year      = {2025},
+  url       = {https://arxiv.org/abs/2503.01935},
+  note      = {MARBLE framework; collab+competition scenarios},
+}
+
+% ===================== F. Single-agent agentic RL \& LLM RL foundations =====================
+
+@article{ppo2017,
+  title   = {Proximal Policy Optimization Algorithms},
+  author  = {Schulman, John and Wolski, Filip and Dhariwal, Prafulla and
+             Radford, Alec and Klimov, Oleg},
+  journal = {arXiv preprint arXiv:1707.06347},
+  year    = {2017},
+  url     = {https://arxiv.org/abs/1707.06347},
+  note    = {PPO; clipped surrogate objective},
+}
+
+@article{deepseekmath2024,
+  title   = {{DeepSeekMath}: Pushing the Limits of Mathematical Reasoning in Open
+             Language Models},
+  author  = {Shao, Zhihong and Wang, Peiyi and Zhu, Qihao and Xu, Runxin and
+             Song, Junxiao and Bi, Xiao and Zhang, Haowei and Zhang, Mingchuan and
+             Li, Y. K. and Wu, Y. and Guo, Daya},
+  journal = {arXiv preprint arXiv:2402.03300},
+  year    = {2024},
+  url     = {https://arxiv.org/abs/2402.03300},
+  note    = {Original source of GRPO},
+}
+
+@inproceedings{instructgpt2022,
+  title     = {Training Language Models to Follow Instructions with Human Feedback},
+  author    = {Ouyang, Long and Wu, Jeff and Jiang, Xu and Almeida, Diogo and
+               Wainwright, Carroll L. and Mishkin, Pamela and Zhang, Chong and
+               Agarwal, Sandhini and Slama, Katarina and Ray, Alex and Schulman, John and
+               Hilton, Jacob and Kelton, Fraser and Miller, Luke and Simens, Maddie and
+               Askell, Amanda and Welinder, Peter and Christiano, Paul and Leike, Jan and
+               Lowe, Ryan},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2022},
+  url       = {https://arxiv.org/abs/2203.02155},
+  note      = {InstructGPT; canonical RLHF three-stage pipeline},
+}
+
+@article{deepseek-r12025,
+  title   = {{DeepSeek-R1}: Incentivizing Reasoning Capability in {LLMs} via
+             Reinforcement Learning},
+  author  = {{DeepSeek-AI}},
+  journal = {Nature},
+  volume  = {645},
+  pages   = {633--638},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2501.12948},
+  note    = {Rule-based RL unlocks long-CoT reasoning; R1 \& R1-Zero},
+}
+
+@inproceedings{react2023,
+  title     = {{ReAct}: Synergizing Reasoning and Acting in Language Models},
+  author    = {Yao, Shunyu and Zhao, Jeffrey and Yu, Dian and Du, Nan and
+               Shafran, Izhak and Narasimhan, Karthik and Cao, Yuan},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2023},
+  url       = {https://arxiv.org/abs/2210.03629},
+  note      = {Interleaved reasoning+acting; agentic origin},
+}
+
+% ===================== G. Safety / Adversarial Robustness =====================
+
+@inproceedings{agentdojo2024,
+  title     = {{AgentDojo}: A Dynamic Environment to Evaluate Prompt Injection
+               Attacks and Defenses for {LLM} Agents},
+  author    = {Debenedetti, Edoardo and Zhang, Jie and Balunovi\'{c}, Mislav and
+               Beurer-Kellner, Luca and Fischer, Marc and Tram\`{e}r, Florian},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)
+               Datasets and Benchmarks Track},
+  year      = {2024},
+  url       = {https://arxiv.org/abs/2406.13352},
+  note      = {97 realistic tasks, 629 security test cases; ETH SPY Lab},
+}
+
+@inproceedings{greshake2023,
+  title     = {Not What You've Signed Up For: Compromising Real-World
+               {LLM}-Integrated Applications with Indirect Prompt Injection},
+  author    = {Greshake, Kai and Abdelnabi, Sahar and Mishra, Shailesh and
+               Endres, Christoph and Holz, Thorsten and Fritz, Mario},
+  booktitle = {Proceedings of the 16th ACM Workshop on Artificial Intelligence
+               and Security (AISec)},
+  year      = {2023},
+  doi       = {10.1145/3605764.3623985},
+  url       = {https://arxiv.org/abs/2302.12173},
+  note      = {Foundational paper on indirect prompt injection},
+}
+
+@inproceedings{injecagent2024,
+  title     = {{InjecAgent}: Benchmarking Indirect Prompt Injections in
+               Tool-Integrated Large Language Model Agents},
+  author    = {Zhan, Qiusi and Liang, Zhixiang and Ying, Zifan and Kang, Daniel},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL},
+  year      = {2024},
+  url       = {https://arxiv.org/abs/2403.02691},
+  note      = {1{,}054 IPI test cases against tool-integrated agents},
+}
+
+@inproceedings{agents-under-siege2025,
+  title     = {Agents Under Siege: Breaking Pragmatic Multi-Agent {LLM} Systems
+               with Optimized Prompt Attacks},
+  author    = {Khan, Rana Muhammad Shahroz and Tan, Zhen and Chen, Sukwon and
+               Foulds, Patrick and Yong, Sean and Liu, Huan and Chen, Tianlong},
+  booktitle = {Proceedings of the 63rd Annual Meeting of the Association for
+               Computational Linguistics (ACL)},
+  year      = {2025},
+  url       = {https://aclanthology.org/2025.acl-long.476/},
+  note      = {Permutation-invariant adversarial attack on multi-agent LLM
+               topologies under bandwidth/latency constraints},
+}
+
+@inproceedings{tmcht2025,
+  title     = {A Troublemaker with Contagious Jailbreak Makes Chaos in Honest Towns},
+  author    = {Men, Tianyi and Cao, Pengfei and Jin, Zhuoran and Chen, Yubo and
+               Liu, Kang and Zhao, Jun},
+  booktitle = {Proceedings of the 63rd Annual Meeting of the Association for
+               Computational Linguistics (ACL)},
+  year      = {2025},
+  url       = {https://arxiv.org/abs/2410.16155},
+  note      = {Contagious jailbreak that propagates through agent memory across
+               non-complete-graph topologies},
+}
+
+@article{wasp2025,
+  title   = {{WASP}: Benchmarking Web Agent Security Against Prompt Injection
+             Attacks},
+  author  = {Evtimov, Ivan and Zharmagambetov, Arman and Grattafiori, Aaron and
+             Guo, Chuan and Chaudhuri, Kamalika},
+  journal = {arXiv preprint arXiv:2504.18575},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2504.18575},
+  note    = {Meta FAIR; end-to-end web-agent prompt-injection benchmark},
+}
+
+% ===================== H. Critic / Tool-use evaluation referenced in §4--§7 =====================
+
+@article{artifactsbench2025,
+  title   = {{ArtifactsBench}: Bridging the Visual-Interactive Gap in {LLM}
+             Code Generation Evaluation},
+  author  = {Zhang, Chenchen and Li, Yuhang and Xu, Can and Liu, Jiaheng and
+             Liu, Ao and Zhou, Changzhi and Deng, Ken and Wu, Dengpeng and
+             Huang, Guanhua and others},
+  journal = {arXiv preprint arXiv:2507.04952},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2507.04952},
+  note    = {v2 dated 2025-09-29; MLLM-as-Judge with temporal screenshots
+             over 1,825 visual-interactive code tasks},
+}
+
+@article{codecriticbench2025,
+  title   = {{CodeCriticBench}: A Holistic Code Critique Benchmark for Large
+             Language Models},
+  author  = {Zhang, Alexander and Dong, Marcus and Liu, Jiaheng and
+             Zhang, Wei and Wang, Yejie and Yang, Jian and Zhang, Ge and
+             Liu, Tianyu and others},
+  journal = {arXiv preprint arXiv:2502.16614},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2502.16614},
+  note    = {Two-task / multi-difficulty critique benchmark with fine-grained
+             checklists, anchoring LLM-as-critic reward design},
+}
+
+@article{criticlean2025,
+  title   = {{CriticLean}: Critic-Guided Reinforcement Learning for
+             Mathematical Formalization},
+  author  = {Peng, Zhongyuan and Yao, Yifan and Ma, Kaijing and Guo, Shuyue and
+             Li, Yizhe and Zhang, Yichi and Zhang, Chenchen and Zhang, Yifan and
+             Yu, Zhouliang and others},
+  journal = {arXiv preprint arXiv:2507.06181},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2507.06181},
+  note    = {Trains a critic via SFT+RL to score Lean 4 formalizations;
+             concrete instance of verifier-as-reward (R6)},
+}
+
+@inproceedings{mtu-bench2025,
+  title     = {{MTU-Bench}: A Multi-granularity Tool-Use Benchmark for Large
+               Language Models},
+  author    = {Wang, Pei and Wu, Yanan and Wang, Zekun and Liu, Jiaheng and
+               Song, Xiaoshuai and Peng, Zhongyuan and Deng, Ken and
+               Zhang, Chenchen and Wang, Jiakai and others},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2025},
+  url       = {https://arxiv.org/abs/2410.11710},
+  note      = {Five-granularity tool-use benchmark covering single/multi-turn
+               and single/multi-tool scenarios},
+}
+
+% ===================== I. Added in journal-revision coverage audit =====================
+
+@inproceedings{rema2025,
+  title     = {{ReMA}: Learning to Meta-Think for {LLM}s with Multi-agent
+               Reinforcement Learning},
+  author    = {Wan, Ziyu and Li, Yunxiang and Wen, Xiaoyu and Song, Yan and
+               Wang, Hanjing and Yang, Linyi and Schmidt, Mark and Wang, Jun and
+               Zhang, Weinan and Hu, Shuyue and Wen, Ying},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2025},
+  url       = {https://openreview.net/forum?id=ur295YVtmt},
+  note      = {NeurIPS 2025 poster; multi-agent RL framework for meta-thinking
+               with high-level meta-thinking and low-level reasoning agents;
+               accessed 2026-04-27},
+}
+
+@inproceedings{collabuiagents2025,
+  title     = {Advancing Language Multi-Agent Learning with Credit Re-Assignment
+               for Interactive Environment Generalization},
+  author    = {He, Zhitao and Liu, Zijun and Li, Peng and Fung, Yi R. and
+               Yan, Ming and Zhang, Ji and Huang, Fei and Liu, Yang},
+  booktitle = {Conference on Language Modeling (COLM)},
+  year      = {2025},
+  url       = {https://openreview.net/forum?id=SoEmgM1ioC},
+  note      = {Introduces CollabUIAgents and multi-agent credit re-assignment for
+               interactive UI/web environments; accessed 2026-04-27},
+}
+
+@inproceedings{comas2026,
+  title     = {{CoMAS}: Co-Evolving Multi-Agent Systems via Interaction Rewards},
+  author    = {Xue, Xiangyuan and Zhou, Yifan and Zhang, Guibin and
+               Zhang, Zaibin and Li, Yijiang and Zhang, Chen and Yin, Zhenfei and
+               Torr, Philip and Ouyang, Wanli and Bai, Lei},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2026},
+  url       = {https://openreview.net/forum?id=ihwAzktmWc},
+  note      = {ICLR 2026 poster; self-evolution through interaction-derived
+               rewards and LLM-as-judge reward construction; accessed
+               2026-04-27},
+}
+
+@inproceedings{owl2025,
+  title     = {{OWL}: Optimized Workforce Learning for General Multi-Agent
+               Assistance in Real-World Task Automation},
+  author    = {Hu, Mengkang and Zhou, Yuhang and Fan, Wendong and Nie, Yuzhou and
+               Ye, Ziyu and Xia, Bowei and Sun, Tao and Jin, Zhaoxuan and
+               Li, Yingru and Zhang, Zeyu and Wang, Yifeng and Ye, Qianshuo and
+               Ghanem, Bernard and Luo, Ping and Li, Guohao},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2025},
+  url       = {https://openreview.net/forum?id=MBJ46gd1CT},
+  note      = {NeurIPS 2025 poster; trains a domain-agnostic planner in a
+               hierarchical Workforce architecture; accessed 2026-04-27},
+}
+
+@inproceedings{sirius2025,
+  title     = {{SiriuS}: Self-improving Multi-agent Systems via Bootstrapped
+               Reasoning},
+  author    = {Zhao, Wanjia and Yuksekgonul, Mert and Wu, Shirley and Zou, James},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2025},
+  url       = {https://openreview.net/forum?id=IDSTtDw4Cs},
+  note      = {Builds and refines an experience library from successful
+               reasoning trajectories for self-improving MAS; accessed
+               2026-04-27},
+}
+
+@inproceedings{multiagent-finetuning2025,
+  title     = {Multiagent Finetuning: Self Improvement with Diverse Reasoning
+               Chains},
+  author    = {Subramaniam, Vighnesh and Du, Yilun and Tenenbaum, Joshua B. and
+               Torralba, Antonio and Li, Shuang and Mordatch, Igor},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2025},
+  url       = {https://llm-multiagent-ft.github.io/},
+  note      = {Finetunes a society of language models using diverse reasoning
+               chains generated through multiagent interaction; accessed
+               2026-04-27},
+}
+
+@article{mas-zero2025,
+  title   = {{MAS-Zero}: Designing Multi-Agent Systems with Zero Supervision},
+  author  = {Ke, Zixuan and Xu, Austin and Ming, Yifei and Nguyen, Xuan-Phi and
+             Xiong, Caiming and Joty, Shafiq},
+  journal = {arXiv preprint arXiv:2505.14996},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2505.14996},
+  note    = {Inference-time self-evolved MAS design through meta-level design
+             feedback and self-verification; accessed 2026-04-27},
+}
+
+@article{learning-to-deliberate2025,
+  title   = {Learning to Deliberate: Meta-policy Collaboration for Agentic
+             {LLM}s with Multi-agent Reinforcement Learning},
+  author  = {Yang, Wei and Thomason, Jesse},
+  journal = {arXiv preprint arXiv:2509.03817},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2509.03817},
+  note    = {Introduces MPDF and SoftRankPO for decentralized meta-cognitive
+             actions Persist, Refine, and Concede; accessed 2026-04-27},
+}

@@ -1,0 +1,8 @@
+This repository uses a split license:
+
+- Paper-pool metadata, exclusion logs, statistics snapshots, and example traces
+  are released under CC0 1.0 Universal.
+- Source code in `scripts/` and `trace-schema/*.py` is released under the MIT
+  License.
+
+SPDX-License-Identifier: CC0-1.0 AND MIT
