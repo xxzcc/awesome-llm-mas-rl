@@ -23,10 +23,10 @@ python scripts/generate_stats.py
 
 ## Reward Type Counts
 
-- `NA`: 32
+- `NA`: 33
 - `hybrid`: 9
 - `shared`: 9
-- `orchestration`: 7
+- `orchestration`: 6
 - `verifier`: 5
 - `individual`: 4
 - `debate`: 3
@@ -35,9 +35,9 @@ python scripts/generate_stats.py
 
 ## Credit Granularity Counts
 
-- `NA`: 35
+- `NA`: 36
 - `agent`: 18
-- `orchestrator`: 8
+- `orchestrator`: 7
 - `role`: 6
 - `turn`: 4
 - `message`: 2
@@ -46,11 +46,11 @@ python scripts/generate_stats.py
 
 | reward_type | NA | agent | message | orchestrator | role | turn |
 |---|---:|---:|---:|---:|---:|---:|
-| NA | 31 | 0 | 0 | 1 | 0 | 0 |
+| NA | 32 | 0 | 0 | 1 | 0 | 0 |
 | debate | 0 | 2 | 1 | 0 | 0 | 0 |
 | hybrid | 0 | 3 | 0 | 1 | 2 | 3 |
 | individual | 0 | 4 | 0 | 0 | 0 | 0 |
-| orchestration | 0 | 0 | 0 | 6 | 1 | 0 |
+| orchestration | 0 | 0 | 0 | 5 | 1 | 0 |
 | process | 0 | 1 | 0 | 0 | 0 | 1 |
 | role | 0 | 0 | 0 | 0 | 2 | 0 |
 | shared | 0 | 8 | 1 | 0 | 0 | 0 |
@@ -66,4 +66,4 @@ python scripts/generate_stats.py
 | harness | 2 | 1 | 0 | 0 | 0 | 0 |
 | hierarchical | 0 | 1 | 0 | 2 | 3 | 3 |
 | planner_executor_critic | 0 | 0 | 0 | 0 | 3 | 0 |
-| swarm | 1 | 0 | 0 | 3 | 0 | 0 |
+| swarm | 2 | 0 | 0 | 2 | 0 | 0 |

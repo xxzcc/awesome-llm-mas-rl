@@ -27,6 +27,7 @@ This repository supersedes the earlier related credit-assignment list at <https:
 | `papers/papers.bib` | BibTeX database used by the manuscript |
 | `scripts/generate_stats.py` | Recomputes corpus counts and cross-tabs |
 | `docs/STATS.md` | Static statistics snapshot used by the paper |
+| `docs/claim_ledger.md` | Maps central claims to artifact fields and boundaries |
 | `trace-schema/trace_schema.json` | Minimal orchestration-trace JSON Schema |
 | `trace-schema/example_trace.json` | Valid illustrative trace |
 | `trace-schema/validate_trace.py` | Dependency-free trace validator |
@@ -87,8 +88,8 @@ Current sparsity signals:
 
 | Axis | Observation |
 |---|---|
-| Reward type | `shared` and `hybrid` each appear in 9 retained entries; `orchestration` appears in 7 |
-| Credit granularity | `agent` appears in 18 entries; `orchestrator` in 8; `message` in only 2 |
+| Reward type | `shared` and `hybrid` each appear in 9 retained entries; `orchestration` appears in 6 |
+| Credit granularity | `agent` appears in 18 entries; `orchestrator` in 7; `message` in only 2 |
 | Orchestration form | `centralized` appears in 15 entries; `hierarchical` in 9; `swarm` in 4 |
 
 These counts are intended to support taxonomy claims, not field-wide prevalence estimates.
