@@ -49,13 +49,13 @@
     <path d="M 181 183 L 159 249"/>
     <path d="M 181 183 L 203 249"/>
     <path d="M 181 183 L 247 245"/>
-    <path d="M 427 215 L 486 215"/>
-    <path d="M 548 215 L 586 215"/>
-    <path d="M 594 236 C 556 278 439 278 407 236"/>
-    <path d="M 799 174 L 740 224"/>
-    <path d="M 799 174 L 858 224"/>
-    <path d="M 740 224 L 799 271" stroke-dasharray="6 5"/>
-    <path d="M 858 224 L 799 271" stroke-dasharray="6 5"/>
+    <path d="M 442 215 L 462 215"/>
+    <path d="M 534 215 L 554 215"/>
+    <path d="M 590 239 C 552 272 444 272 406 239"/>
+    <path d="M 799 150 L 730 212"/>
+    <path d="M 799 150 L 868 212"/>
+    <path d="M 730 212 L 799 242" stroke-dasharray="6 5"/>
+    <path d="M 868 212 L 799 242" stroke-dasharray="6 5"/>
     <path d="M 181 445 L 104 505"/>
     <path d="M 181 445 L 139 511"/>
     <path d="M 181 445 L 181 513"/>
@@ -72,10 +72,10 @@
   </g>
 
   <g stroke="#2563eb" stroke-width="2.1" fill="none" marker-end="url(#arrow-blue)">
-    <path d="M 740 174 L 858 174"/>
-    <path d="M 858 174 L 740 174"/>
-    <path d="M 740 174 L 799 126"/>
-    <path d="M 799 126 L 858 174"/>
+    <path d="M 730 212 L 868 212"/>
+    <path d="M 868 212 L 730 212"/>
+    <path d="M 730 212 L 799 150"/>
+    <path d="M 799 150 L 868 212"/>
   </g>
 
   <g font-family="Inter,Segoe UI,Arial,sans-serif" text-anchor="middle" font-weight="800">
@@ -86,18 +86,18 @@
     <circle cx="203" cy="249" r="19" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
     <circle cx="247" cy="245" r="19" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
 
-    <rect x="381" y="191" width="80" height="48" rx="9" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
-    <text x="421" y="219" font-size="12" fill="#991b1b">planner</text>
-    <rect x="486" y="191" width="80" height="48" rx="9" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
-    <text x="526" y="219" font-size="12" fill="#1d4ed8">executor</text>
-    <rect x="586" y="191" width="80" height="48" rx="9" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
-    <text x="626" y="219" font-size="12" fill="#9a3412">critic</text>
+    <rect x="370" y="191" width="72" height="48" rx="9" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+    <text x="406" y="219" font-size="11" fill="#991b1b">planner</text>
+    <rect x="462" y="191" width="72" height="48" rx="9" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="498" y="219" font-size="11" fill="#1d4ed8">executor</text>
+    <rect x="554" y="191" width="72" height="48" rx="9" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
+    <text x="590" y="219" font-size="11" fill="#9a3412">critic</text>
 
-    <circle cx="740" cy="174" r="21" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
-    <circle cx="799" cy="126" r="21" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
-    <circle cx="858" cy="174" r="21" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
-    <path d="M 799 247 L 830 274 L 799 301 L 768 274 Z" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
-    <text x="799" y="278" font-size="11" fill="#166534">res.</text>
+    <circle cx="730" cy="212" r="19" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="799" cy="150" r="19" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="868" cy="212" r="19" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <path d="M 799 231 L 828 257 L 799 283 L 770 257 Z" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+    <text x="799" y="261" font-size="11" fill="#166534">res.</text>
 
     <circle cx="181" cy="445" r="27" fill="#fee2e2" stroke="#ef4444" stroke-width="2.4"/>
     <text x="181" y="450" font-size="14" fill="#991b1b">O</text>
