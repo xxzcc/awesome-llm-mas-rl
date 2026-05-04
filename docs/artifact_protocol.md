@@ -1,6 +1,10 @@
 # Artifact Protocol
 
-This repository is a taxonomy artifact for a survey, not a complete systematic-review database.
+This repository is a taxonomy artifact for a structured mapping review,
+not a complete PRISMA systematic-review database.  The companion search
+record is `docs/search_protocol_2026-04-26.md` (updated through
+2026-05-04); the robustness check for
+near-miss exclusions is `docs/audits/coverage_stress_test_2026-05-03.md`.
 
 ## Inclusion Rule
 
