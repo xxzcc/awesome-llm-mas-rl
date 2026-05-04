@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="650" viewBox="0 0 980 650" role="img" aria-labelledby="title desc">
+  <title id="title">Credit-bearing units in LLM-MAS RL</title>
+  <desc id="desc">Eight credit-bearing units in LLM-MAS reinforcement learning, stacked from team to token, with representative entries for each level.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-15%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="980" height="650" rx="22" fill="#f8fafc"/>
+  <rect x="38" y="34" width="904" height="580" rx="20" fill="#ffffff" stroke="#dbe3ef"/>
+  <text x="68" y="75" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" font-weight="800" fill="#0f172a">Credit-bearing units in LLM-MAS RL</text>
+  <text x="68" y="103" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" fill="#475569">The sparse orchestrator and message levels mark under-populated research territory.</text>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" filter="url(#shadow)">
+    <rect x="125" y="142" width="250" height="45" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <rect x="125" y="202" width="250" height="45" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/>
+    <rect x="125" y="262" width="250" height="45" rx="10" fill="#ffedd5" stroke="#dc2626" stroke-width="3"/>
+    <rect x="125" y="322" width="250" height="45" rx="10" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
+    <rect x="125" y="382" width="250" height="45" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+    <rect x="125" y="442" width="250" height="45" rx="10" fill="#dcfce7" stroke="#dc2626" stroke-width="3"/>
+    <rect x="125" y="502" width="250" height="45" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+    <rect x="125" y="562" width="250" height="45" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  </g>
+
+  <g stroke="#64748b" stroke-width="2.1" marker-end="url(#arrow)">
+    <line x1="250" y1="187" x2="250" y2="202"/>
+    <line x1="250" y1="247" x2="250" y2="262"/>
+    <line x1="250" y1="307" x2="250" y2="322"/>
+    <line x1="250" y1="367" x2="250" y2="382"/>
+    <line x1="250" y1="427" x2="250" y2="442"/>
+    <line x1="250" y1="487" x2="250" y2="502"/>
+    <line x1="250" y1="547" x2="250" y2="562"/>
+  </g>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="800" fill="#0f172a" text-anchor="middle">
+    <text x="250" y="171">team</text>
+    <text x="250" y="231">orchestrator</text>
+    <text x="250" y="291">role</text>
+    <text x="250" y="351">agent</text>
+    <text x="250" y="411">turn</text>
+    <text x="250" y="471">message</text>
+    <text x="250" y="531">tool call</text>
+    <text x="250" y="591">token</text>
+  </g>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" fill="#334155">
+    <text x="432" y="154" font-size="12" font-weight="800" fill="#64748b">Representative entries</text>
+    <text x="432" y="171" font-size="14">shared outcome baseline</text>
+    <text x="432" y="231" font-size="14">Puppeteer, Kimi PARL, WideSeek <tspan font-style="italic" fill="#dc2626">(sparse)</tspan></text>
+    <text x="432" y="291" font-size="14">MALT, M-GRPO, MATPO, DEPART, LAMO</text>
+    <text x="432" y="351" font-size="14">MAGRPO, Dr. MAS, SHARP, MAPoRL, LangMARL</text>
+    <text x="432" y="411" font-size="14">MarsRL, Context-Folding, MARSHAL</text>
+    <text x="432" y="471" font-size="14">C3 <tspan font-style="italic" fill="#dc2626">(sparse)</tspan></text>
+    <text x="432" y="531" font-size="14">MATPO, SHARP, Agent Lightning</text>
+    <text x="432" y="591" font-size="14">standard GAE, inherited single-agent credit</text>
+  </g>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" fill="#64748b">
+    <path d="M 89 142 C 62 170 62 277 89 307" fill="none" stroke="#dc2626" stroke-width="2.2"/>
+    <text x="56" y="212" text-anchor="middle" fill="#dc2626" font-weight="800">new</text>
+    <text x="56" y="229" text-anchor="middle" fill="#dc2626" font-weight="800">LLM-MAS</text>
+    <path d="M 89 322 C 55 374 55 556 89 607" fill="none" stroke="#94a3b8" stroke-width="2.2"/>
+    <text x="55" y="458" text-anchor="middle">mostly</text>
+    <text x="55" y="475" text-anchor="middle">inherited</text>
+  </g>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" fill="#475569">
+    <rect x="680" y="138" width="215" height="84" rx="14" fill="#fff7ed" stroke="#fed7aa"/>
+    <text x="704" y="166" font-weight="800" fill="#9a3412">Why it matters</text>
+    <text x="704" y="188">Credit units determine what an</text>
+    <text x="704" y="207">RL update can reward or punish.</text>
+    <rect x="680" y="248" width="215" height="104" rx="14" fill="#fef2f2" stroke="#fecaca"/>
+    <text x="704" y="276" font-weight="800" fill="#991b1b">Sparse cells</text>
+    <text x="704" y="298">Orchestrator and message credit</text>
+    <text x="704" y="317">are visible but still thin in the</text>
+    <text x="704" y="336">retained paper pool.</text>
+  </g>
+</svg>

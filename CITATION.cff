@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this artifact, please cite the accompanying survey."
-title: "Reinforcement Learning for LLM-based Multi-Agent Systems: An Orchestration-Trace Taxonomy"
+title: "Reinforcement Learning for LLM-based Multi-Agent Systems through Orchestration Traces"
 authors:
   - family-names: "Zhang"
     given-names: "Chenchen"

@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="680" viewBox="0 0 980 680" role="img" aria-labelledby="title desc">
+  <title id="title">Six recurring LLM-MAS topologies</title>
+  <desc id="desc">Visual schematics of six recurring LLM-based multi-agent-system topologies: centralized, planner-executor-critic, debate, parallel swarm, hierarchical, and managed harness-based.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-15%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="980" height="680" rx="22" fill="#f8fafc"/>
+  <text x="50" y="58" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" font-weight="800" fill="#0f172a">Six recurring LLM-MAS topologies</text>
+  <text x="50" y="87" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" fill="#475569">Topology constrains which reward and credit units are easiest to define.</text>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" filter="url(#shadow)">
+    <rect x="40" y="118" width="282" height="220" rx="16" fill="#ffffff" stroke="#dbe3ef"/>
+    <rect x="349" y="118" width="282" height="220" rx="16" fill="#ffffff" stroke="#dbe3ef"/>
+    <rect x="658" y="118" width="282" height="220" rx="16" fill="#ffffff" stroke="#dbe3ef"/>
+    <rect x="40" y="382" width="282" height="220" rx="16" fill="#ffffff" stroke="#dbe3ef"/>
+    <rect x="349" y="382" width="282" height="220" rx="16" fill="#ffffff" stroke="#dbe3ef"/>
+    <rect x="658" y="382" width="282" height="220" rx="16" fill="#ffffff" stroke="#dbe3ef"/>
+  </g>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="800" fill="#0f172a">
+    <text x="181" y="314" text-anchor="middle">(a) centralized</text>
+    <text x="490" y="314" text-anchor="middle">(b) planner-executor-critic</text>
+    <text x="799" y="314" text-anchor="middle">(c) debate / committee</text>
+    <text x="181" y="578" text-anchor="middle">(d) parallel swarm</text>
+    <text x="490" y="578" text-anchor="middle">(e) hierarchical</text>
+    <text x="799" y="578" text-anchor="middle">(f) managed / harness-based</text>
+  </g>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" fill="#64748b" text-anchor="middle">
+    <text x="181" y="333">Kimi PARL, M-GRPO, Puppeteer</text>
+    <text x="490" y="333">MALT, MATPO, MAE</text>
+    <text x="799" y="333">Debate-as-Reward, LatentMAS</text>
+    <text x="181" y="597">Kimi K2.5/K2.6, parallel Claudes</text>
+    <text x="490" y="597">HALO, AgentSpawn, DEPART</text>
+    <text x="799" y="597">Codex, Claude Code, Agent Lightning</text>
+  </g>
+
+  <g stroke="#475569" stroke-width="2.2" fill="none" marker-end="url(#arrow)">
+    <path d="M 181 183 L 115 245"/>
+    <path d="M 181 183 L 159 249"/>
+    <path d="M 181 183 L 203 249"/>
+    <path d="M 181 183 L 247 245"/>
+    <path d="M 427 215 L 486 215"/>
+    <path d="M 548 215 L 586 215"/>
+    <path d="M 594 236 C 556 278 439 278 407 236"/>
+    <path d="M 799 174 L 740 224"/>
+    <path d="M 799 174 L 858 224"/>
+    <path d="M 740 224 L 799 271" stroke-dasharray="6 5"/>
+    <path d="M 858 224 L 799 271" stroke-dasharray="6 5"/>
+    <path d="M 181 445 L 104 505"/>
+    <path d="M 181 445 L 139 511"/>
+    <path d="M 181 445 L 181 513"/>
+    <path d="M 181 445 L 223 511"/>
+    <path d="M 181 445 L 258 505"/>
+    <path d="M 490 446 L 430 499"/>
+    <path d="M 490 446 L 490 499"/>
+    <path d="M 490 446 L 550 499"/>
+    <path d="M 490 522 L 459 548"/>
+    <path d="M 490 522 L 521 548"/>
+    <path d="M 799 448 L 740 515"/>
+    <path d="M 799 448 L 799 515"/>
+    <path d="M 799 448 L 858 515"/>
+  </g>
+
+  <g stroke="#2563eb" stroke-width="2.1" fill="none" marker-end="url(#arrow-blue)">
+    <path d="M 740 174 L 858 174"/>
+    <path d="M 858 174 L 740 174"/>
+    <path d="M 740 174 L 799 126"/>
+    <path d="M 799 126 L 858 174"/>
+  </g>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" text-anchor="middle" font-weight="800">
+    <circle cx="181" cy="183" r="28" fill="#fee2e2" stroke="#ef4444" stroke-width="2.4"/>
+    <text x="181" y="188" font-size="14" fill="#991b1b">O</text>
+    <circle cx="115" cy="245" r="19" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="159" cy="249" r="19" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="203" cy="249" r="19" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="247" cy="245" r="19" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+
+    <rect x="381" y="191" width="80" height="48" rx="9" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+    <text x="421" y="219" font-size="12" fill="#991b1b">planner</text>
+    <rect x="486" y="191" width="80" height="48" rx="9" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="526" y="219" font-size="12" fill="#1d4ed8">executor</text>
+    <rect x="586" y="191" width="80" height="48" rx="9" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
+    <text x="626" y="219" font-size="12" fill="#9a3412">critic</text>
+
+    <circle cx="740" cy="174" r="21" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="799" cy="126" r="21" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="858" cy="174" r="21" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <path d="M 799 247 L 830 274 L 799 301 L 768 274 Z" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+    <text x="799" y="278" font-size="11" fill="#166534">res.</text>
+
+    <circle cx="181" cy="445" r="27" fill="#fee2e2" stroke="#ef4444" stroke-width="2.4"/>
+    <text x="181" y="450" font-size="14" fill="#991b1b">O</text>
+    <circle cx="104" cy="505" r="15" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="139" cy="511" r="15" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="181" cy="513" r="15" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="223" cy="511" r="15" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="258" cy="505" r="15" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="120" cy="540" r="15" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="164" cy="548" r="15" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="208" cy="548" r="15" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="252" cy="540" r="15" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+
+    <circle cx="490" cy="446" r="27" fill="#fee2e2" stroke="#ef4444" stroke-width="2.4"/>
+    <text x="490" y="451" font-size="14" fill="#991b1b">O</text>
+    <circle cx="430" cy="499" r="19" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="490" cy="499" r="19" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="550" cy="499" r="19" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="459" cy="548" r="16" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="521" cy="548" r="16" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+
+    <rect x="705" y="416" width="188" height="130" rx="13" fill="#f1f5f9" stroke="#64748b" stroke-width="2" stroke-dasharray="7 6"/>
+    <text x="799" y="431" font-size="11" fill="#475569">managed harness</text>
+    <circle cx="799" cy="448" r="25" fill="#fee2e2" stroke="#ef4444" stroke-width="2.4"/>
+    <text x="799" y="453" font-size="14" fill="#991b1b">O</text>
+    <circle cx="740" cy="515" r="18" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="799" cy="515" r="18" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="858" cy="515" r="18" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  </g>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" fill="#475569">
+    <circle cx="58" cy="646" r="9" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/><text x="74" y="650">orchestrator / planner</text>
+    <circle cx="226" cy="646" r="9" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/><text x="242" y="650">sub-agent / executor</text>
+    <rect x="399" y="637" width="18" height="18" rx="4" fill="#ffedd5" stroke="#f97316" stroke-width="2"/><text x="424" y="650">critic</text>
+    <path d="M 512 637 L 524 646 L 512 655 L 500 646 Z" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/><text x="535" y="650">resolver</text>
+    <line x1="654" y1="646" x2="704" y2="646" stroke="#475569" stroke-width="2.2" marker-end="url(#arrow)"/><text x="714" y="650">delegation</text>
+    <line x1="812" y1="646" x2="862" y2="646" stroke="#475569" stroke-width="2.2" stroke-dasharray="6 5" marker-end="url(#arrow)"/><text x="872" y="650">aggregation</text>
+  </g>
+</svg>

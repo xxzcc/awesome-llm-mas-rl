@@ -3,13 +3,13 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC0 + MIT](https://img.shields.io/badge/license-CC0%20%2B%20MIT-blue.svg)](LICENSE)
 
-A GitHub-first curated paper list, paper-pool artifact, and trace schema for:
+Curated paper list, paper-pool artifact, and trace schema for:
 
-> Reinforcement Learning for LLM-based Multi-Agent Systems: An Orchestration-Trace Taxonomy
+> Reinforcement Learning for LLM-based Multi-Agent Systems through Orchestration Traces
 
-This repository accompanies a survey of reinforcement learning and post-training methods for LLM-based multi-agent systems. The central organizing idea is the **orchestration trace**: a temporal event graph recording orchestrator decisions, sub-agent spawns, inter-agent messages, tool calls, returns, aggregation steps, rewards, and costs.
+This repository accompanies a survey of reinforcement learning and post-training methods for LLM-based multi-agent systems. The survey studies RL not only over individual agent actions, but also over spawning, delegation, communication, aggregation, and stopping decisions. The central organizing idea is the **orchestration trace**: a temporal event graph recording orchestrator decisions, sub-agent spawns, inter-agent messages, tool calls, returns, aggregation steps, rewards, and costs.
 
-The README is designed for browsing on GitHub, with the retained papers listed directly below. The CSV files and scripts remain the source of truth for auditability, statistics, and reproducibility.
+The retained papers are listed directly in this README for easy browsing. The CSV files and scripts remain the source of truth for auditability, statistics, and reproducibility.
 
 ## Repository Status
 
@@ -19,10 +19,12 @@ The README is designed for browsing on GitHub, with the retained papers listed d
 - Audited records total: 116
 - Trace artifact: JSON Schema, example trace, and dependency-free validator
 
-This repository supersedes the earlier related credit-assignment list at <https://github.com/xxzcc/Awesome-Credit-Assignment-in-LLM-RL> for the LLM-MAS survey artifact.
+The README style is inspired by the earlier related credit-assignment list at <https://github.com/xxzcc/Awesome-Credit-Assignment-in-LLM-RL>. The two repositories cover related but different scopes: that list focuses on credit assignment in LLM RL, while this artifact focuses on LLM-MAS reinforcement learning, orchestration traces, reward and credit design, benchmarks, safety, and system evidence.
 
 ## Table of Contents
 
+- [Survey Maps](#survey-maps)
+- [Core Tables](#core-tables)
 - [Papers by Taxonomy](#papers-by-taxonomy)
 - [Artifact Files](#artifact-files)
 - [Quick Start](#quick-start)
@@ -31,6 +33,57 @@ This repository supersedes the earlier related credit-assignment list at <https:
 - [Orchestration Trace Schema](#orchestration-trace-schema)
 - [Update Policy](#update-policy)
 - [Citation](#citation)
+
+## Survey Maps
+
+<p align="center">
+  <img src="assets/topologies.svg" alt="Six recurring LLM-MAS topologies" width="880">
+</p>
+
+<p align="center">
+  <img src="assets/credit_hierarchy.svg" alt="Eight credit-bearing units in LLM-MAS RL" width="880">
+</p>
+
+<p align="center">
+  <img src="assets/orchestration_subdecisions.svg" alt="Five orchestration sub-decisions from O1 to O5" width="880">
+</p>
+
+## Core Tables
+
+### Topology Cheat Sheet
+
+| Topology | Defining feature | Representative entries |
+| --- | --- | --- |
+| Centralized orchestrator + sub-agents | One orchestrator dispatches tasks to sub-agents and aggregates results | Kimi Agent Swarm, M-GRPO, Puppeteer, WideSeek-R1 |
+| Planner-executor-critic | Specialized roles with a critic feedback loop | MALT, MATPO, MAE |
+| Debate / committee | Multiple agents argue and a resolver decides | Debate-as-Reward, LatentMAS |
+| Parallel swarm | Many near-homogeneous agents run concurrently, then aggregate | Kimi PARL, parallel Claudes |
+| Hierarchical agents | Multi-level spawning across agent layers | HALO, AgentSpawn, DEPART, LAMO |
+| Managed / harness-based | A harness wraps model, tools, prompts, and execution | OpenAI Codex, Claude Code, Agent Lightning |
+
+### Reward Families
+
+| ID | Family | Typical credit unit | Representative entries |
+| --- | --- | --- | --- |
+| R1 | Shared team / outcome | team | MAGRPO, MAPoRL, Dr. MAS |
+| R2 | Individual agent | agent | MARFT, Context-Folding |
+| R3 | Role-specific | role | MALT, MATPO, LAMO, DEPART |
+| R4 | Process reward | step / turn | MALT role-PRM, MarsRL |
+| R5 | Tool-use reward | tool call | MATPO, Agent Lightning |
+| R6 | Debate / verifier | message / turn | Debate-as-Reward, MAE, MAGIC |
+| R7 | Orchestration reward | orchestrator decision | Kimi PARL, Puppeteer, ParaManager |
+| R8 | Hybrid local-global | mixed | SHARP, M-GRPO, HERA, LangMARL |
+
+### Benchmark Gap
+
+| Domain | Cited examples | MAS-native status | Measures |
+| --- | --- | --- | --- |
+| Coding | SWE-Bench, ArtifactsBench, CodeCriticBench | No | E1 only |
+| Web / browser | WebArena, BrowseComp | No | E1 only |
+| Research / search | GAIA | No | E1; occasional cost |
+| Tool use | ToolBench, tau-bench, MTU-Bench | Partial | E1 + partial tool/cost signals |
+| Long-horizon OS | OSWorld | No | E1 + partial wall-clock |
+| MAS-oriented | MultiAgentBench, TAMAS; reported internal Kimi Swarm Bench | Partial / closed | Open entries cover subsets; no open benchmark covers E1-E4 jointly |
 
 ## Papers by Taxonomy
 
@@ -520,8 +573,7 @@ When adding a paper, update `papers/papers.csv`, regenerate this README with `py
 
 ```bibtex
 @misc{zhang2026rl4llmmas,
-  title  = {Reinforcement Learning for LLM-based Multi-Agent Systems:
-            An Orchestration-Trace Taxonomy},
+  title  = {Reinforcement Learning for LLM-based Multi-Agent Systems through Orchestration Traces},
   author = {Chenchen Zhang},
   year   = {2026},
   note   = {Working draft and artifact repository},
