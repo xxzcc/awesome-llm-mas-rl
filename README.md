@@ -572,13 +572,14 @@ When adding a paper, update `papers/papers.csv`, regenerate this README with `py
 ## Citation
 
 ```bibtex
-@misc{zhang2026rl4llmmas,
-  title  = {Reinforcement Learning for LLM-based Multi-Agent Systems through Orchestration Traces},
-  author = {Chenchen Zhang},
-  year   = {2026},
-  note   = {Working draft and artifact repository},
-  url    = {https://github.com/xxzcc/awesome-llm-mas-rl}
+
+@article{zhang2026reinforcementlearningllmbasedmultiagent,
+  title={Reinforcement Learning for LLM-based Multi-Agent Systems through Orchestration Traces},
+  author={Chenchen Zhang},
+  journal={arXiv preprint arXiv:2605.02801},
+  year={2026}
 }
+
 ```
 
 ## License
