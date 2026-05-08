@@ -573,9 +573,9 @@ When adding a paper, update `papers/papers.csv`, regenerate this README with `py
 
 ```bibtex
 
-@article{zhang2026reinforcementlearningllmbasedmultiagent,
+@article{zhang2026reinforcement,
   title={Reinforcement Learning for LLM-based Multi-Agent Systems through Orchestration Traces},
-  author={Chenchen Zhang},
+  author={Zhang, Chenchen},
   journal={arXiv preprint arXiv:2605.02801},
   year={2026}
 }
