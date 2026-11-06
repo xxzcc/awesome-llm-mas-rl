@@ -14,7 +14,7 @@ The retained papers are listed directly in this README for easy browsing. The CS
 ## Repository Status
 
 - Target GitHub URL: <https://github.com/xxzcc/awesome-llm-mas-rl>
-- Retained paper pool: 84 entries
+- Retained paper pool: 85 entries
 - Exclusion log: 32 screened-but-excluded records
 - Audited records total: 116
 - Trace artifact: JSON Schema, example trace, and dependency-free validator
@@ -90,9 +90,9 @@ The README style is inspired by the earlier related credit-assignment list at <h
 <!-- BEGIN GENERATED PAPER LIST -->
 This section is generated from `papers/papers.csv` by `python scripts/generate_readme_papers.py`. Edit the CSV, not this block.
 
-Retained corpus: **84 entries**.
+Retained corpus: **85 entries**.
 
-### RL and Post-Training Methods (42)
+### RL and Post-Training Methods (43)
 
 1. **LLM Collaboration With Multi-Agent Reinforcement Learning** (2025) `RL` `reward: shared` `credit: agent` `orchestration: centralized` `core`
 
@@ -261,6 +261,10 @@ Retained corpus: **84 entries**.
 42. **SAGE: Multi-Agent Self-Evolution for LLM Reasoning** (2026) `RL` `reward: verifier` `credit: role` `orchestration: planner_executor_critic` `scenario: math` `core` `verified: partial`
 
    *First author: Anonymous; venue: ACL ARR 2026 January Submission.* [[Paper]](https://openreview.net/forum?id=7sOeRzBzjB) -- Challenger-planner-solver-critic co-evolution with verifier-grounded filtering.
+
+43. **NeuroMAS: Multi-Agent Systems as Neural Networks with Joint Reinforcement Learning** (2026) `RL` `reward: shared` `credit: agent` `core`
+
+   *First author: Haoran Lu; venue: The First Conference on Statistics and Trustworthy AI for Cross (X)-Domain Acceleration (STAI-X 2026), Paper Award Honorable Mention.* [[Paper]](https://arxiv.org/abs/2605.16757) -- Role-free LoRA-adapted agent nodes in a layered text-passing network trained jointly with REINFORCE from a shared terminal reward.
 
 ### Frameworks and Systems (3)
 
