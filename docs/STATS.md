@@ -8,13 +8,13 @@ python scripts/generate_stats.py
 
 ## Headline Counts
 
-- Retained entries: 84
+- Retained entries: 85
 - Excluded decisions: 32
-- Audited records: 116
+- Audited records: 117
 
 ## Retained Category Counts
 
-- `rl_method`: 42
+- `rl_method`: 43
 - `benchmark`: 18
 - `classical_marl`: 10
 - `industry`: 6
@@ -24,7 +24,7 @@ python scripts/generate_stats.py
 ## Reward Type Counts
 
 - `NA`: 33
-- `hybrid`: 15
+- `hybrid`: 16
 - `shared`: 10
 - `orchestration`: 7
 - `verifier`: 6
@@ -37,7 +37,7 @@ python scripts/generate_stats.py
 
 - `NA`: 36
 - `agent`: 23
-- `role`: 10
+- `role`: 11
 - `orchestrator`: 8
 - `turn`: 5
 - `message`: 2
@@ -48,7 +48,7 @@ python scripts/generate_stats.py
 |---|---:|---:|---:|---:|---:|---:|
 | NA | 32 | 0 | 0 | 1 | 0 | 0 |
 | debate | 0 | 3 | 1 | 0 | 0 | 0 |
-| hybrid | 0 | 6 | 0 | 1 | 4 | 4 |
+| hybrid | 0 | 6 | 0 | 1 | 5 | 4 |
 | individual | 0 | 4 | 0 | 0 | 0 | 0 |
 | orchestration | 0 | 0 | 0 | 6 | 1 | 0 |
 | process | 0 | 1 | 0 | 0 | 0 | 1 |
@@ -64,6 +64,6 @@ python scripts/generate_stats.py
 | centralized | 0 | 14 | 1 | 3 | 0 | 0 |
 | debate | 1 | 3 | 1 | 0 | 1 | 2 |
 | harness | 2 | 1 | 0 | 0 | 0 | 0 |
-| hierarchical | 0 | 2 | 0 | 3 | 5 | 3 |
+| hierarchical | 0 | 2 | 0 | 3 | 6 | 3 |
 | planner_executor_critic | 0 | 0 | 0 | 0 | 4 | 0 |
 | swarm | 2 | 0 | 0 | 2 | 0 | 0 |
