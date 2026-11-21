@@ -14,9 +14,9 @@ The retained papers are listed directly in this README for easy browsing. The CS
 ## Repository Status
 
 - Target GitHub URL: <https://github.com/xxzcc/awesome-llm-mas-rl>
-- Retained paper pool: 84 entries
+- Retained paper pool: 85 entries
 - Exclusion log: 32 screened-but-excluded records
-- Audited records total: 116
+- Audited records total: 117
 - Trace artifact: JSON Schema, example trace, and dependency-free validator
 
 The README style is inspired by the earlier related credit-assignment list at <https://github.com/xxzcc/Awesome-Credit-Assignment-in-LLM-RL>. The two repositories cover related but different scopes: that list focuses on credit assignment in LLM RL, while this artifact focuses on LLM-MAS reinforcement learning, orchestration traces, reward and credit design, benchmarks, safety, and system evidence.
@@ -90,9 +90,9 @@ The README style is inspired by the earlier related credit-assignment list at <h
 <!-- BEGIN GENERATED PAPER LIST -->
 This section is generated from `papers/papers.csv` by `python scripts/generate_readme_papers.py`. Edit the CSV, not this block.
 
-Retained corpus: **84 entries**.
+Retained corpus: **85 entries**.
 
-### RL and Post-Training Methods (42)
+### RL and Post-Training Methods (43)
 
 1. **LLM Collaboration With Multi-Agent Reinforcement Learning** (2025) `RL` `reward: shared` `credit: agent` `orchestration: centralized` `core`
 
@@ -261,6 +261,10 @@ Retained corpus: **84 entries**.
 42. **SAGE: Multi-Agent Self-Evolution for LLM Reasoning** (2026) `RL` `reward: verifier` `credit: role` `orchestration: planner_executor_critic` `scenario: math` `core` `verified: partial`
 
    *First author: Anonymous; venue: ACL ARR 2026 January Submission.* [[Paper]](https://openreview.net/forum?id=7sOeRzBzjB) -- Challenger-planner-solver-critic co-evolution with verifier-grounded filtering.
+
+43. **MultiAgent-OPD: End-to-End Training of Hierarchical Multi-Agent Systems with On-Policy Distillation** (2026) `RL` `reward: hybrid` `credit: role` `orchestration: hierarchical` `scenario: research` `core`
+
+   *First author: Yuhan Sun; venue: arXiv.* [[Paper]](https://arxiv.org/abs/2610.23234) -- Trains a shared Leader–Searcher–Answerer policy with token-level on-policy distillation for Searchers and outcome RL for the other roles.
 
 ### Frameworks and Systems (3)
 
@@ -510,7 +514,7 @@ Current retained categories:
 
 | Category | Entries |
 |---|---:|
-| RL methods | 42 |
+| RL methods | 43 |
 | Benchmarks | 18 |
 | Classical MARL foundations | 10 |
 | Industrial systems and reports | 6 |
@@ -521,9 +525,9 @@ Current sparsity signals:
 
 | Axis | Observation |
 |---|---|
-| Reward type | `hybrid` appears in 15 retained entries; `shared` in 10; `orchestration` in 7 |
-| Credit granularity | `agent` appears in 23 entries; `role` in 10; `orchestrator` in 8; `message` in only 2 |
-| Orchestration form | `centralized` appears in 18 entries; `hierarchical` in 13; `debate` in 8 |
+| Reward type | `hybrid` appears in 16 retained entries; `shared` in 10; `orchestration` in 7 |
+| Credit granularity | `agent` appears in 23 entries; `role` in 11; `orchestrator` in 8; `message` in only 2 |
+| Orchestration form | `centralized` appears in 18 entries; `hierarchical` in 14; `debate` in 8 |
 
 These counts are intended to support taxonomy claims, not field-wide prevalence estimates.
 
